@@ -8,8 +8,8 @@ A lightweight, dynamic Google Chrome extension that allows you to store your for
 
 Your privacy and data persistence are managed automatically based on your browser state:
 
-* Cloud Sync (Connected):** If you are signed into a Google Account in Chrome, your data is securely synced across your profile. It will survive cache clears and automatically sync if you sign into another computer.
-* Local Storage (Not Connected):** If you are *not* signed into a Google Account, the extension stores your data completely offline on your computer's local hard drive.
+* **Cloud Sync (Connected):** If you are signed into a Google Account in Chrome, your data is securely synced across your profile. It will survive cache clears and automatically sync if you sign into another computer.
+* **Local Storage (Not Connected):** If you are *not* signed into a Google Account, the extension stores your data completely offline on your computer's local hard drive.
 * **Cache Warning:** If you are using local storage (not signed into a Google Account) and you completely clear your browser's **"Cookies and other site data"**, your saved auto-fill information **will be permanently deleted**. 
 * **Secure Backups:** Use the built-in **Export Backup** button to download a `.json` text file copy of your data to your hard drive so you can restore it anytime if your cache is wiped.
 
