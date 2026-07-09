@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 360px; font-family: Arial, sans-serif; padding: 14px; margin: 0; box-sizing: border-box; }
+    h3 { margin-top: 0; color: #333; }
+    .field-row { display: flex; align-items: center; margin-bottom: 8px; gap: 6px; }
+    input.field-value { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; min-width: 0; font-size: 13px; }
+    input.field-label { width: 95px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; background: #f5f5f5; font-weight: bold; font-size: 13px; }
+    input.field-label[readonly] { background: #e9e9e9; color: #555; border: 1px solid #ddd; cursor: not-allowed; }
+    button { padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .btn-remove { background-color: #ea4335; color: white; padding: 8px 14px; }
+    .btn-remove[disabled] { background-color: #e0e0e0; color: #999; cursor: not-allowed; }
+    .btn-add { background-color: #34a853; color: white; width: 100%; margin-bottom: 12px; padding: 10px; font-size: 13px; }
+    .btn-fill { background-color: #4285F4; color: white; width: 100%; padding: 12px; margin-bottom: 12px; font-size: 15px; }
+    .backup-zone { display: flex; gap: 6px; border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px; }
+    .btn-backup { background-color: #757575; color: white; flex: 1; font-size: 11px; padding: 6px; }
+    #fieldsContainer { max-height: 250px; overflow-y: auto; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <h3>Auto-Fill Assistant</h3>
+  
+  <div id="fieldsContainer"></div>
+  
+  <button id="addBtn" class="btn-add">+ Add Custom Field</button>
+  <button id="fillBtn" class="btn-fill">Fill Current Page</button>
+
+  <div class="backup-zone">
+    <button id="exportBtn" class="btn-backup">Export Backup</button>
+    <button id="importBtn" class="btn-backup">Import Backup</button>
+    <input type="file" id="fileInput" style="display:none" accept=".json">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
