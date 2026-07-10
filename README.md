@@ -23,6 +23,13 @@ Your privacy and data persistence are managed automatically based on your browse
 
 ---
 
+## Availability
+
+This extension will soon be available on the Chrome Web Store.  
+Once published, you’ll be able to install it directly by searching for **“Custom Auto-Fill Assistant”** in the Chrome Web Store.
+
+---
+
 ## How to Install (Step-by-Step)
 
 Follow these simple steps to install the extension manually using Chrome's Developer Mode:
